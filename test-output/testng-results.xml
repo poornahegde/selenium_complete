@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="839" started-at="2019-06-19T06:10:11Z" finished-at="2019-06-19T06:10:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="839" started-at="2019-06-19T06:10:11Z" finished-at="2019-06-19T06:10:12Z">
+      <class name="test1.reportGeneration">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:test1.reportGeneration@685cb137]" name="startTest" is-config="true" duration-ms="253" started-at="2019-06-19T06:10:11Z" finished-at="2019-06-19T06:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="failTest()[pri:0, instance:test1.reportGeneration@685cb137]" name="failTest" duration-ms="11" started-at="2019-06-19T06:10:12Z" finished-at="2019-06-19T06:10:12Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at test1.reportGeneration.failTest(reportGeneration.java:80)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failTest -->
+        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:test1.reportGeneration@685cb137]" name="captureStatus" is-config="true" duration-ms="16" started-at="2019-06-19T06:10:12Z" finished-at="2019-06-19T06:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failTest status=FAILURE method=reportGeneration.failTest()[pri:0, instance:test1.reportGeneration@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method status="PASS" signature="passTest()[pri:0, instance:test1.reportGeneration@685cb137]" name="passTest" duration-ms="1" started-at="2019-06-19T06:10:12Z" finished-at="2019-06-19T06:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passTest -->
+        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:test1.reportGeneration@685cb137]" name="captureStatus" is-config="true" duration-ms="1" started-at="2019-06-19T06:10:12Z" finished-at="2019-06-19T06:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=passTest status=SUCCESS method=reportGeneration.passTest()[pri:0, instance:test1.reportGeneration@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method status="SKIP" signature="skipTest()[pri:0, instance:test1.reportGeneration@685cb137]" name="skipTest" duration-ms="2" started-at="2019-06-19T06:10:12Z" finished-at="2019-06-19T06:10:12Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Explicitly throw new Skip Exception]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Explicitly throw new Skip Exception
+at test1.reportGeneration.skipTest(reportGeneration.java:87)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skipTest -->
+        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:test1.reportGeneration@685cb137]" name="captureStatus" is-config="true" duration-ms="1" started-at="2019-06-19T06:10:12Z" finished-at="2019-06-19T06:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=skipTest status=SKIP method=reportGeneration.skipTest()[pri:0, instance:test1.reportGeneration@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:test1.reportGeneration@685cb137]" name="endTest" is-config="true" duration-ms="517" started-at="2019-06-19T06:10:12Z" finished-at="2019-06-19T06:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- test1.reportGeneration -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
